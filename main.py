@@ -1,1 +1,1 @@
-print ("hello commitizen!")
+print ("hello commitizen2!")
