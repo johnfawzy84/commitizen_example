@@ -1,5 +1,11 @@
 ## v0.0.3 (2021-07-27)
 
+### Perf
+
+- nothing
+
+## v0.0.3 (2021-07-27)
+
 ### Fix
 
 - **add_commit.py**: fix problemm with cz bump command
