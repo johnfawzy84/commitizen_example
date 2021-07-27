@@ -20,7 +20,7 @@ if __name__ == "__main__":
     call("pipenv run git fetch --all --tags")
     call("pipenv run git add -A")
     call("pipenv run cz commit")
-    bump_output = call("pipenv run cz bump -ch")
+    bump_output = call(cmd="pipenv run cz bump -ch",returnStdout = True)
     while "available" in bump_output.stderr or "available" in bump_output.stdout : 
         bump_output = call("pipenv run cz bump -ch")
     call("pipenv run git push origin --tags")
