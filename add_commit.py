@@ -3,7 +3,7 @@ from typing import no_type_check
 
 def call( cmd,cwd=".", skipExceptionOnError=False, returnStdout = False):
     print ("Calling Command: " + cmd )
-    output = subprocess.run(cmd, cwd=cwd, shell=True, stdout=subprocess.PIPE if returnStdout else sys.stdout, stderr=subprocess.PIPE, encoding='utf-8')
+    output = subprocess.run(cmd, cwd=cwd, shell=True, stdout=subprocess.PIPE if returnStdout else sys.stdout, stderr=subprocess.PIPE)
     if (output.returncode != 0):
         print ("\tFailed with error code " + str(output.returncode))
         if not output.stdout is None:
