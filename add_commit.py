@@ -22,7 +22,7 @@ if __name__ == "__main__":
     call("cz commit") #commit with commitizen
     bump_output = call(cmd="cz bump -ch",returnStdout = True)
     while "available" in bump_output.stderr or "available" in bump_output.stdout : 
-        bump_output = call("cz bump -ch")
+        bump_output = call("cz bump -ch",returnStdout = True)
     call("git push origin --tags")
         
 
