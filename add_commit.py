@@ -17,13 +17,13 @@ def call( cmd,cwd=".", skipExceptionOnError=False, returnStdout = False):
     return output
 
 if __name__ == "__main__":
-    call("pipenv run git fetch --all --tags")
-    call("pipenv run git add -A")
-    call("pipenv run cz commit")
-    bump_output = call(cmd="pipenv run cz bump -ch",returnStdout = True)
+    call("git fetch --all --tags")
+    call("git add -A")
+    call("cz commit")
+    bump_output = call(cmd="cz bump -ch",returnStdout = True)
     while "available" in bump_output.stderr or "available" in bump_output.stdout : 
-        bump_output = call("pipenv run cz bump -ch")
-    call("pipenv run git push origin --tags")
+        bump_output = call("cz bump -ch")
+    call("git push origin --tags")
         
 
         
