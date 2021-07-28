@@ -7,7 +7,7 @@ def call( cmd,cwd=".", skipExceptionOnError=False, returnStdout = False):
     if (output.returncode != 0):
         print ("\tFailed with error code " + str(output.returncode))
         if not output.stdout is None:
-            print ("output:",output.stdout)
+            print ("output:",output.stdout )
         if not output.stderr is None:
             print ("error:",output.stderr)
         if not skipExceptionOnError:
