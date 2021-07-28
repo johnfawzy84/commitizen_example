@@ -1,3 +1,30 @@
+## v0.0.4 (2021-07-28)
+
+### Fix
+
+- nothing
+
+## v0.0.5 (2021-07-28)
+
+### Fix
+
+- nothing
+- nothing
+- nothing
+
+## v0.0.4 (2021-07-28)
+
+### Fix
+
+- nothing
+- print error
+- char map
+- nothing
+
+### Perf
+
+- nothing
+
 ## v0.0.3 (2021-07-28)
 
 ### Fix
