@@ -18,7 +18,7 @@ def call( cmd,cwd=".", skipExceptionOnError=False, returnStdout = False):
 
 def handle_version_bump():
     try:
-        bump_output = call(cmd="cz bump -ch",returnStdout = True)
+        call(cmd="cz bump -ch")
     except Exception as e:
         if (e.args[1].returncode == 7):
             print("version is available pumping up again!")
