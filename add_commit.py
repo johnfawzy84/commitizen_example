@@ -28,7 +28,7 @@ def handle_version_bump():
 if __name__ == "__main__":
     call("git fetch --all --tags")
     call("git add -A")
-    call("cz commit") #commit with commitizen 
+    call("cz commit") #commit with commitizen
     # call(cmd="cz bump -ch")
     while (handle_version_bump()):
         pass
