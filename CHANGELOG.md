@@ -1,3 +1,29 @@
+## v0.0.7 (2021-07-28)
+
+### Fix
+
+- **add_commit.py**: just trying out the script
+
+## v0.0.7 (2021-07-28)
+
+### Fix
+
+- **merg-v0.0.6**: merging and integrating
+
+## v0.0.1 (2021-07-26)
+
+### Fix
+
+- **main.py**: test commitizen
+
+## v0.0.2 (2021-07-26)
+
+## v0.0.0-prerelease (2021-07-26)
+
+### Fix
+
+- **main.py**: commitize2 not commitizen
+
 ## v0.0.6 (2021-07-28)
 
 ### Fix
