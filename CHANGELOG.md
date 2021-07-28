@@ -3,6 +3,12 @@
 ### Fix
 
 - nothing
+
+## v0.0.4 (2021-07-28)
+
+### Fix
+
+- nothing
 - print error
 - char map
 - nothing
