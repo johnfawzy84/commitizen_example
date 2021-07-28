@@ -1,3 +1,9 @@
+## v0.0.6 (2021-07-28)
+
+### Fix
+
+- **add_commit.py**: just trying out the script
+
 ## v0.0.7 (2021-07-28)
 
 ### Fix
