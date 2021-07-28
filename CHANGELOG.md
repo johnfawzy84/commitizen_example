@@ -4,6 +4,14 @@
 
 - nothing
 - nothing
+- nothing
+
+## v0.0.4 (2021-07-28)
+
+### Fix
+
+- nothing
+- nothing
 
 ## v0.0.4 (2021-07-28)
 
