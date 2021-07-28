@@ -16,15 +16,22 @@ def call( cmd,cwd=".", skipExceptionOnError=False, returnStdout = False):
         print ("\tSucceeded!")
     return output
 
+def handle_version_bump():
+    try:
+        bump_output = call(cmd="cz bump -ch",returnStdout = True)
+    except Exception as e:
+        if (e.args[1].returncode == 7):
+            print("version is available pumping up again!")
+            return True
+    return False
+
 if __name__ == "__main__":
     call("git fetch --all --tags")
     call("git add -A")
     call("cz commit") #commit with commitizen
     # call(cmd="cz bump -ch")
-    try:
-        bump_output = call(cmd="cz bump -ch",returnStdout = True)
-    except Exception as e:
-        print(e.args)
+    while (handle_version_bump()):
+        pass
     # while "available" in bump_output.stderr or "available" in bump_output.stdout : 
     #     bump_output = call("cz bump -ch",returnStdout = True)
     call("git push origin --tags")
