@@ -21,7 +21,10 @@ if __name__ == "__main__":
     call("git add -A")
     call("cz commit") #commit with commitizen
     # call(cmd="cz bump -ch")
-    bump_output = call(cmd="cz bump -ch",returnStdout = True)
+    try:
+        bump_output = call(cmd="cz bump -ch",returnStdout = True)
+    except Exception as e:
+        print(e.args)
     # while "available" in bump_output.stderr or "available" in bump_output.stdout : 
     #     bump_output = call("cz bump -ch",returnStdout = True)
     call("git push origin --tags")
